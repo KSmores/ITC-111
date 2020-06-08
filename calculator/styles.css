@@ -1,0 +1,47 @@
+.main{
+    background-color: rgb(87, 123, 124);
+    margin:0 auto;
+    width: max-content;
+    padding: 2px 2px auto;
+    overflow: hidden;
+}
+
+.row{
+    height: max-content;
+    margin: 0 2px auto;
+    overflow: hidden;
+}
+
+#display1{
+    margin: 1px 0;
+    text-align: right;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    width: 270px;
+    height: 18px;
+}
+
+#display2{
+    background-color: rgb(107, 204, 207);
+    margin: 0 2px auto;
+    text-align: right;
+    font-size: xx-large;
+    width: 273px;
+    height: 40px;
+}
+
+button{
+    background-color: rgb(53, 163, 163);
+    font-size: x-large;
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+
+button:hover{
+    background-color: aqua;
+}
+
+button:active{
+    background-color: rgb(43, 90, 94);
+}
