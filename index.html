@@ -1,9 +1,96 @@
-<DOCTYPE html>
-<html>
- <head>
- </head>
- 
- <body>
-   <h1> New Landing Page</1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ITC-111 Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <!--
+        This div tag with the id 'outerDiv' is used to contain
+        the rest of the page. I can use this div to control the
+        overall placing of the elements on the page.
+    -->
+    <div id='outerDiv'>
+    <!-- Start of Nav Bar Section -->
+    <!--
+        This div could easly have been a section or aside tag
+        as it is being used to layout other elements of the page.
+    -->
+        <div>
+        <!--
+            Here we have an un-ordered list to group our links
+            as indivitual line items horizontally.
+        -->
+            <ul>
+                <li>
+                    <a href="#" onclick='changeLinkText("home")'>Home</a>
+                </li>
+                <li>
+                <!--
+                    This link is calling a function that is in our script tag.
+                    'onclick' is an event attribute. All tags can use the onclick
+                    attriute.
+                -->
+                    <a href="#" onclick='changeLinkText("classEx")'>Class Exercises</a>
+                </li>
+                <li>
+                    <a href="#" onclick='changeLinkText("assign")'>Assignments</a>
+                </li>
+            </ul>
+        </div>
+        <!-- End of Nav Bar Section -->
+
+        <!-- Start of Side Bar Section -->
+        <!--
+            This div could easly have been a section or aside tag
+            as it is being used to layout other elements of the page.
+        -->
+        <div id='innerDivBodyLeft_Default'>
+            <h4 id="ls_Heading">ITC-111</h4>
+            <hr>
+            <!-- Seen when page loads or when Home is clicke. Visibility on by default -->
+            <div id="divLeft_Default">
+                <a href='https://canvas.seattlecentral.edu/courses/1903197' class='divLeftLinks' onclick='changeDivRightText("Course Canvas")'>Course Canvas</a><br>
+                <a href='https://github.com/KSmores/ITC-111' class='divLeftLinks' onclick='changeDivRightText("Repository")'>Repository</a><br>
+            </div>
+            <!-- Seen when Class Exercise Link is clicked. -->
+            <div id="divLeft_CELinks">
+                <a href='classEx01.html' class='divLeftLinks' onclick='changeDivRightText("Class Ex 01")'>Class Exercise 01</a><br>
+                <a href='classEx02a.html' class='divLeftLinks' onclick='changeDivRightText("Class Ex 02a")'>Class Exercise 02a</a><br>
+                <a href='classEx02b.html' class='divLeftLinks' onclick='changeDivRightText("Class Ex 02b")'>Class Exercise 02b</a><br>
+                <a href='classEx05a.html' class='divLeftLinks' onclick='changeDivRightText("Class Ex 05a")'>Class Exercise 05a</a><br>
+                <a href='classEx06a.html' class='divLeftLinks' onclick='changeDivRightText("Class Ex 06a")'>Class Exercise 06a</a><br>
+                <a href='classEx06d/classEx06d.html' class='divLeftLinks' onclick='changeDivRightText("Class Ex 06d")'>Class Exercise 06d</a><br>
+                <a href='calculator/calculator.html' class='divLeftLinks' onclick='changeDivRightText("Calculator")'>Class Exercise - Calculator</a><br>
+                <a href='flashCard/index.html' class='divLeftLinks' onclick='changeDivRightText("Flash Cards")'>Class Exercise - Flash Cards</a><br>
+                <a href='SignInRegistration/signinForm.html' class='divLeftLinks' onclick='changeDivRightText("Sign In Form")'>Class Exercise - Sign In Form</a><br>
+            </div>
+            <!-- Seen when Assignments Link is clicked. -->
+            <div id="divLeft_ALinks">
+                <a href='assignmentPage/assignmentPortal.html' class='divLeftLinks' onclick='changeDivRightText("Assignment Portal")'>Old Assignment Portal</a><br>
+                <a href='tributePage/index.html' class='divLeftLinks' onclick='changeDivRightText("Tribute Page")'>Tribute Page</a><br>
+            </div>
+            <div id="divLeft_RLinks">
+                <a href='#' class='divLeftLinks' onclick='changeDivRightText("Resources 01")'>Resources 01</a><br>
+                <a href='#' class='divLeftLinks' onclick='changeDivRightText("Resources 02")'>Resources 02</a><br>
+            </div>
+        </div>
+        <!-- End of Side Bar Section -->
+
+
+        <!--
+This div is lined up right next to the previous one. CSS is used to align it
+to the left. Div's would normaly stack as they are block elements.
+-->
+        <div id='innerDivBodyRight'>
+            <h2 id="rs_Heading">Intro to Programming <br>w/ HTML, CSS & JavaScript</h2>
+            <p id='divRight'>Content loaded in div on page load by default.</p>
+        </div>
+    </div>
+</body>
+
 </html>
