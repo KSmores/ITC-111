@@ -1,0 +1,21 @@
+
+body {
+    background-image: url("images/nice.jpg");
+    background-size: 555px 711px;
+    }
+.container {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 60%;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 1px rgb(0, 0, 0);
+    font-size: 20px;
+    }
+img {
+    width: 50%;
+    height: 50%;
+    }
+li {
+    list-style-type: none;
+}
