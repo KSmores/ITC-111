@@ -56,9 +56,9 @@
             document.getElementById('divLeft_CELinks').style.display = "none";
             document.getElementById('divLeft_ALinks').style.display = "none";
             document.getElementById('divLeft_RLinks').style.display = "none";
-            document.getElementById('divRight').innerHTML = "Home link clicked. Default text displayed";
+            document.getElementById('divRight').innerHTML = "Kyle Dinsmore's Web Portal";
             document.getElementById('ls_Heading').innerHTML = "ITC-111";
-            document.getElementById('rs_Heading').innerHTML = "Intro to Programming <br> & HTML/JavaScript";
+            document.getElementById('rs_Heading').innerHTML = "ITC-111: Intro to Programming <br> & HTML/JavaScript";
         break;
 
         case 'classEx':
@@ -76,9 +76,9 @@
             document.getElementById('divLeft_CELinks').style.display = "none";
             document.getElementById('divLeft_ALinks').style.display = "block";
             document.getElementById('divLeft_RLinks').style.display = "none";
-            document.getElementById('divRight').innerHTML = "Assignments Default Description";
+            document.getElementById('divRight').innerHTML = "List of Main Assignments";
             document.getElementById('ls_Heading').innerHTML = "Assignments";
-            document.getElementById('rs_Heading').innerHTML = "Assignment Brief";
+            document.getElementById('rs_Heading').innerHTML = "Assignments - Spring Quarter 2020";
         break;
 
         case 'resource':
